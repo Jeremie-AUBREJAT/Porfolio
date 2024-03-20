@@ -7,6 +7,6 @@
     <script src="asset/function.js"></script>
     <script src="asset/move.js"></script>
     <script src="asset/progress.js"></script>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="./src/move.css">
 </head>
