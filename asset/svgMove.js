@@ -1,56 +1,90 @@
- // Fonction pour exécuter l'animation après le chargement du DOM
- function lancerAnimation() {
+function lancerAnimation() {
     var chemin1 = document.getElementById('path1');
     var chemin2 = document.getElementById('path2');
     var chemin3 = document.getElementById('path3');
     var chemin4 = document.getElementById('path4');
     var chemin5 = document.getElementById('path5');
+    
+    // Préparation initiale des chemins
+    chemin1.style.transform = 'translate(0, 650px)';
+    chemin2.style.transform = 'translate(0, -650px)';
+    chemin3.style.transform = 'translate(-850px, 0)';
+    chemin4.style.transform = 'translate(850px, 0)';
+    chemin5.style.transform = 'translate(0, 650px)';
+   
 
-    // Animation pour chemin1
+    // Définition des transitions
     chemin1.style.transition = 'transform 1.3s ease, opacity 2s ease';
-    chemin1.setAttribute('transform', 'translate(0, 650)');
-    chemin1.style.opacity = '0';
-    setTimeout(function() {
-        chemin1.setAttribute('transform', 'translate(0, 0)');
-        chemin1.style.opacity = '1';
-    }, 100);
-
-    // Animation pour chemin2
     chemin2.style.transition = 'transform 1.3s ease, opacity 2s ease';
-    chemin2.setAttribute('transform', 'translate(0, -650)');
-    chemin2.style.opacity = '0';
-    setTimeout(function() {
-        chemin2.setAttribute('transform', 'translate(0, 0)');
-        chemin2.style.opacity = '1';
-    }, 100);
-
-    // Animation pour chemin3
     chemin3.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin3.setAttribute('transform', 'translate(-850, 0)');
-    chemin3.style.opacity = '0';
-    setTimeout(function() {
-        chemin3.setAttribute('transform', 'translate(0, 0)');
-        chemin3.style.opacity = '1';
-    }, 1250);
-
-    // Animation pour chemin4
     chemin4.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin4.setAttribute('transform', 'translate(850, 0)');
-    chemin4.style.opacity = '0';
-    setTimeout(function() {
-        chemin4.setAttribute('transform', 'translate(0, 0)');
-        chemin4.style.opacity = '1';
-    }, 1250);
+    chemin5.style.transition = 'transform 0.8s ease,opacity 3s ease';
 
-    // Animation pour chemin5
-    chemin5.style.transition = 'opacity 4s ease';
-    chemin5.style.opacity = '0';
+    // Démarrage de l'animation après un délai de 5 secondes
     setTimeout(function() {
-        chemin5.style.opacity = '1';
-    }, 2000);
+        // Déclenchement des animations
+        chemin1.style.transform = 'translate(0, 0)';
+        chemin1.style.opacity = '1';
+        chemin2.style.transform = 'translate(0, 0)';
+        chemin2.style.opacity = '1';
+        setTimeout(function() {
+            chemin3.style.transform = 'translate(0, 0)';
+            chemin3.style.opacity = '1';
+            chemin4.style.transform = 'translate(0, 0)';
+            chemin4.style.opacity = '1';
+            setTimeout(function() {
+                chemin5.style.transform = 'translate(0, 0)';
+                chemin5.style.opacity = '1';
+            }, 1350);
+        }, 1250);
+    }, 500);
 }
 
 // Appel de la fonction après le chargement du DOM
-document.addEventListener("DOMContentLoaded", function() {
-    lancerAnimation();
+document.addEventListener("DOMContentLoaded", lancerAnimation);
+
+
+
+//fonction scroll on header
+document.addEventListener('DOMContentLoaded', function() {
+    var content = document.getElementById('content');
+    var lastScrollPosition = 0;
+    var ticking = false;
+  
+    function updateContent(scrollPos) {
+      var translateValue = 'translateY(' + (-scrollPos) + 'px)';
+      content.style.transform = translateValue;
+    }
+  
+    window.addEventListener('scroll', function() {
+      lastScrollPosition = window.scrollY;
+  
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          updateContent(lastScrollPosition);
+          ticking = false;
+        });
+  
+        ticking = true;
+      }
+    });
+  });
+
+
+  //changement de background portrait/paysage
+  window.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+
+    function setHeaderBackground() {
+        const orientation = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
+        const imageUrl = orientation === 'portrait' ? 'asset/img/back2 - Copie.png' : 'asset/img/back2.png';
+        header.style.backgroundImage = `url('${imageUrl}')`;
+    }
+
+    setHeaderBackground(); // Définir l'image de fond initiale lors du chargement de la page
+
+    // Écouter les changements d'orientation de l'appareil et changer l'image de fond en conséquence
+    window.addEventListener('orientationchange', function () {
+        setHeaderBackground();
+    });
 });
