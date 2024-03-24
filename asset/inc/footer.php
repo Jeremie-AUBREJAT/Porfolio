@@ -1,4 +1,3 @@
-
 <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
 
@@ -18,6 +17,11 @@
                 Haut de page
             </button>
         </div>
-
+        <div class="bottom-0 right-0 flex justify-center items-center">
+            <button class="scroll-to-top-button mr-2 mb-2">
+                <img src="asset/img/fleche.png" alt="bouton-haut-de-page" class="rounded-2xl">
+            </button>
+        </div>
+        <script src="src/js/hautPage.js"></script>
     </div>
 </footer>
