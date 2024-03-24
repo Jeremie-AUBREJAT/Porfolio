@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  //changement de background portrait/paysage
   window.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('header');
 
@@ -79,12 +78,43 @@ document.addEventListener('DOMContentLoaded', function() {
         const orientation = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
         const imageUrl = orientation === 'portrait' ? 'asset/img/back2 - Copie.png' : 'asset/img/back2.png';
         header.style.backgroundImage = `url('${imageUrl}')`;
+        
+        // Rafraîchir la page seulement si l'orientation de l'appareil change
+        if (window.orientationChanged) {
+            window.location.reload();
+            window.orientationChanged = false; // Réinitialiser la variable
+        }
     }
 
     setHeaderBackground(); // Définir l'image de fond initiale lors du chargement de la page
 
     // Écouter les changements d'orientation de l'appareil et changer l'image de fond en conséquence
     window.addEventListener('orientationchange', function () {
+        window.orientationChanged = true; // Indiquer que l'orientation de l'appareil a changé
         setHeaderBackground();
     });
 });
+
+
+// window.addEventListener('DOMContentLoaded', function () {
+//   const svg = document.getElementById('svg1');
+
+//   function setSvgSize() {
+//       const orientation = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
+//       if (orientation === 'portrait') {
+//           svg.classList.remove('w-3/4');
+//           svg.classList.add('h-3/4');
+//       } else {
+//           svg.classList.remove('h-3/4');
+//           svg.classList.add('w-3/4');
+//       }
+//   }
+
+//   setSvgSize('w-3/4'); // Définir la taille initiale de l'élément SVG lors du chargement de la page
+
+//   // Écouter les changements d'orientation de l'appareil et ajuster la taille de l'élément SVG en conséquence
+//   window.addEventListener('orientationchange', function () {
+//       setSvgSize();
+//   });
+// });
+

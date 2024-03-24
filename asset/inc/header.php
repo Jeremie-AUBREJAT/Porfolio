@@ -1,12 +1,12 @@
 
-<header id="header" class=" h-3/4 lg:w-screen lg:h-screen flex items-center justify-center bg-cover bg-center " style="background-image: url('asset/img/back2.png');"style="all: unset;">
+<header id="header" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('asset/img/back2.png')">
     <!-- Background image -->
-    <!--<div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('asset/img/background2.png');"></div>-->
+    <!--<div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('asset/img/background2.png');"style="all: unset;"></div>-->
     
         <div class="h-screen lg:h-full flex flex-col items-center justify-center">
         
         <svg
-   class=" h-3/4 xl:h-auto xl:items-center xl:justify-center "
+   class="w-5/6" 
    version="1.1"
    id="svg1"
    width="1920"
