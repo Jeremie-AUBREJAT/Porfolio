@@ -11,17 +11,17 @@ function lancerAnimation() {
     chemin2.style.transform = 'translate(0, -650px)';
     chemin3.style.transform = 'translate(-850px, 0)';
     chemin4.style.transform = 'translate(850px, 0)';
-    chemin5.style.transform = 'translate(0, 650px)';
+    chemin5.style.transform = 'translate(0, 450px)';
     chemin6.style.transform = 'translate(0, 650px)';
    
 
     // Définition des transitions
-    chemin1.style.transition = 'transform 1.3s ease, opacity 2s ease';
-    chemin2.style.transition = 'transform 1.3s ease, opacity 2s ease';
-    chemin3.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin4.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin5.style.transition = 'transform 0.8s ease,opacity 3s ease';
-    chemin6.style.transition = 'transform 0.8s ease,opacity 3s ease';
+    chemin1.style.transition = 'transform 0.8s ease, opacity 2s ease';
+    chemin2.style.transition = 'transform 0.8s ease, opacity 2s ease';
+    chemin3.style.transition = 'transform 0.5s ease, opacity 2s ease';
+    chemin4.style.transition = 'transform 0.5s ease, opacity 2s ease';
+    chemin5.style.transition = 'transform 0.5s ease,opacity 2s ease';
+    chemin6.style.transition = 'transform 0.5s ease,opacity 2s ease';
 
     // Démarrage de l'animation après un délai de 5 secondes
     setTimeout(function() {
@@ -40,8 +40,8 @@ function lancerAnimation() {
                 chemin5.style.opacity = '1';
                 chemin6.style.transform = 'translate(0, 0)';
                 chemin6.style.opacity = '1';
-            }, 1350);
-        }, 1250);
+            }, 1050);
+        }, 950);
     }, 500);
 }
 

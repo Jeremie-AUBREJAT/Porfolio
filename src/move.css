@@ -29,9 +29,8 @@
       display: none;
   }
 }
-.custom-scale-80 {
-  transform: scale(0.9);
-}
+
+
 @keyframes fillProgressBar {
   0% { width: 0%; }
   92% { width: 91.666%; } /* Correspond à 11/12 */

@@ -1,94 +1,143 @@
 <?php include('asset/inc/head.php'); ?>
 
-<body class=" bg-gradient-to-r from-gray-900 to-gray-700">
+<body class="bg-gradient-to-r from-gray-900 to-gray-700">
 
     <?php include('asset/inc/header.php'); ?>
 
     <div id="content">
-            <script src="asset/functionScroll.js"></script>
-        <div style="background-image: url('asset/img/background3.png');" class="rounded-2xl lg:m-32 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <!-- Section de compétences -->
+        <div class="mx-2 bg-gray-100 grid grid-cols-1">
+            <div class="mt-14 grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                <img src="asset/img/profil.png" alt="" class="mx-auto w-1/2 sm:w-1/6 xl:1">
+                <p class="text-2xl font-mono-bold italic ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-20">Bienvenue sur AJ-WEB<br> Je suis Jérémie AUBREJAT.<br>
+                    Développeur web freelance passionné, <br>je m'engage à transformer vos idées en réalité.</p>
+            </div>
 
-
-            <section class="py-16 bg-gray-800 xl:rounded-l-lg bg-opacity-95">
-                <div id="Right" class="container mx-auto text-center">
-
-                    <h2 id="upMove2" class="inline-block px-16 py-2 bg-gray-200 text-black rounded-lg text-2xl font-semibold">AJ-WEB</h2>
-                    <div id="upMove" class="container mx-auto p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
-                        <div class="bg-gray-100 shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl leading-relaxed rounded-2xl">
-                            Soyez les bienvenus dans le monde de l'innovation numérique ! En tant que développeur web freelance passionné, je m'engage à transformer vos idées en réalité.
-                            Avec une expertise approfondie dans les dernières technologies web, je suis prêt à concevoir des solutions qui répondent précisément à vos besoins.
-                            De la création de sites web percutants à l'optimisation de la performance et à l'expérience utilisateur, chaque ligne de code que j'écris est motivée par le désir de vous offrir une présence en ligne exceptionnelle.
-                            Ensemble, explorons les possibilités infinies du web pour propulser votre projet vers de nouveaux sommets.
-                            Laissez-moi être le partenaire qui transformera votre vision en une réalité numérique exceptionnelle.
-                        </div>
+            <div class="mx-10 flex flex-wrap justify-center">
+                <div class="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 relative">
+                    <div class="bg-gray-100 p-12">
+                        <a href="#competences"><img src="asset/img/fond1.png" alt="Fond 1" class="h-1/3 p-4 filter blur-sm transition-all duration-300 ease-in-out hover:blur-none">
+                            <img src="asset/img/competences.png" alt="Compétences" class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-20">
+                        </a>
                     </div>
+
                 </div>
-            </section>
-            <section class="py-16 bg-gray-800 xl:rounded-r-lg bg-opacity-95">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 relative">
+                    <div class="bg-gray-100 p-12">
+                        <a href="#contact"><img class="h-1/3 p-4 filter blur-sm transition-all duration-300 ease-in-out hover:blur-none" src="asset/img/fond2.png" alt="Portfolio">
+                            <img src="asset/img/contact.png" alt="Contact" class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-20">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 relative">
+                    <div class="bg-gray-100 p-12">
+                        <a href="#portfolio"><img class="h-1/3 p-4 filter blur-sm transition-all duration-300 ease-in-out hover:blur-none" src="asset/img/fond3.png" alt="Contact">
+                            <img src="asset/img/portfolio.png" alt="porfolio" class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-20">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div id="competences" class="mt-12 mx-2 grid grid-cols-1 ">
+            <!-- Section de compétences -->
+            <section class="py-16 bg-gray-50">
 
                 <div id="Left" class=" container mx-auto text-center">
-                    <h2 class="inline-block px-4 py-2 bg-gray-200 text-black rounded-lg text-2xl font-semibold">Mes Compétences</h2>
-                    <div class="py-12 mx-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
-                        <!-- compétences -->
-                        <div class="bg-gray-100 p-5 rounded-lg shadow-2xl">
-                            <h3 class="text-lg font-semibold">Développement Frontend</h3>
-                            <p>HTML, CSS, JavaScript, React</p>
-                            <div class="w-full bg-gray-200 rounded">
-                                <div class="progress-bar mt-2 h-3 w-11/12 bg-green-500 rounded"></div>
+                    <img src="asset/img/competences.png" alt="icone competences" class="mx-auto w-20">
+                    <h2 class="inline-block px-4 py-2  text-black rounded-lg text-2xl font-semibold italic">Compétences</h2>
+
+                    <div class="py-12 mx-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
+                        <!-- compétences front -->
+                        <div class="bg-gray-100 p-4 rounded-lg shadow-2xl">
+                            <h3 class="text-lg font-semibold italic">Développement Frontend</h3>
+                            <div class="mt-4 flex items-center">
+
+                                <img src="asset/img/html.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar  h-3 w-11/12 bg-green-500 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-center">
+
+                                <img src="asset/img/css.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar  h-3 w-11/12 bg-green-500 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-center">
+
+                                <img src="asset/img/javascript.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar3  h-3 w-11/12 bg-green-500 rounded"></div>
+                                </div>
                             </div>
 
-                        </div>
-                        <div class="bg-gray-100 p-5 rounded-lg shadow-ml">
-                            <h3 class="text-lg font-semibold">Développement Backend</h3>
-                            <p>PHP, SQL, NO SQL, LARAVEL</p>
-                            <div class="w-full bg-gray-200 rounded">
-                                <div class="progress-bar2 mt-2 h-3 w-3/5 bg-blue-400 rounded"></div>
-                            </div>
 
                         </div>
+                        <!-- competences back -->
                         <div class="bg-gray-100 p-5 rounded-lg shadow-2xl">
-                            <h3 class="text-lg font-semibold">Design Web</h3>
-                            <p>UI/UX, Figma</p>
+                            <h3 class="text-lg font-semibold italic">Développement Backend</h3>
+                            <div class="mt-8 flex items-center">
+
+                                <img src="asset/img/php.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar2  h-3 w-1/4 bg-blue-500 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="mt-12 flex items-center">
+
+                                <img src="asset/img/laravel.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar2  h-3 w-11/12 bg-blue-500 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="mt-10 flex items-center">
+
+                                <img src="asset/img/sql.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                <div class="w-full h-3 bg-gray-200 rounded">
+                                    <div class="progress-bar2  h-3 w-11/12 bg-blue-500 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 p-5 rounded-lg shadow-2xl">
+                            <h3 class="text-lg font-semibold italic">framework Frontend</h3>
+                            <p class="italic">TAILWIND</p>
                             <div class="w-full bg-gray-200 rounded">
                                 <div class="progress-bar3 mt-2 h-3 w-5/6 bg-green-500 rounded"></div>
                             </div>
                         </div>
-                        <div class="bg-gray-100 p-5 rounded-lg shadow-ml">
-                            <h3 class="text-lg font-semibold">Responsive Design</h3>
-                            <p>CSS Flexbox, Grid, TAILWIND</p>
-                            <div class="w-full bg-gray-200 rounded">
-                                <div class="progress-bar3 mt-2 h-3 w-5/6 bg-green-500 rounded"></div>
-                            </div>
-                        </div>
                         <div class="bg-gray-100 p-5 rounded-lg shadow-2xl">
-                            <h3 class="text-lg font-semibold">CMS</h3>
-                            <p>Wordpress</p>
+                            <h3 class="text-lg font-semibold italic">CMS</h3>
+                            <p class="italic">Wordpress</p>
                             <div class=" w-full bg-gray-200 rounded">
                                 <div class="progress-bar3 mt-2 h-3 w-5/6 bg-green-500 rounded"></div>
                             </div>
                         </div>
-                        <div></div>
-                        <div class="smartphone p-5 rounded-lg">
-                            <img src="asset/img/uxui.png" class="py-14 mx-auto mt-2 rounded-lg" alt="Description de l'image">
-                        </div>
-                        <div class="smartphone p-5 rounded-lg">
-                            <img src="asset/img/ordinateur.png" class="py-10 w-64 mx-auto mt-2 rounded-lg" alt="Description de l'image">
-                        </div>
                     </div>
                 </div>
             </section>
-        </div>
+
         <!-- Section de portfolio -->
-        <section id="porfolio" style="background-image: url('asset/img/background3.png');" class="rounded-2xl lg:mx-32">
-            <div class=" xl:rounded-2xl bg-gray-400 bg-opacity-95">
+        <section id="portfolio" class="py-16">
+            <div class="py-16 bg-gray-50">
                 <div class="container text-center mx-auto">
-                    <h2 class="inline-block px-4 py-2 bg-gray-800 text-white rounded-lg text-2xl mt-10 font-semibold">Portfolio</h2>
+                <img src="asset/img/portfolio.png" alt="icone competences" class="mx-auto w-20">
+                    <h2 class="inline-block px-4 py-2  text-black rounded-lg text-2xl font-semibold italic">Portfolio</h2>
                     <!-- projets -->
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-8">
                         <div class="bg-gray-100 p-4 rounded-lg shadow-2xl">
-                            <h3 class="mt-">Vôtre Projet</h3>
+                            <h3 class="mt-">Votre Projet</h3>
                             <img src="asset/img/votreprojet.png" class="w-full mx-auto rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none shadow-xl" alt="Description de l'image">
                             <p class="mt-">Le site Web dont vous avez toujours rêvé</p>
                         </div>
@@ -133,8 +182,68 @@
 
         <!-- Pied de page -->
 
+        <div id="contact" class="container mx-auto my-8 p-8 bg-gray-100 shadow-md rounded-md">
+            <h2 class="text-2xl font-semibold italic mb-4">Contact</h2>
+            <form id="contactForm" onsubmit="return validateForm()" class="space-y-4">
+                <div class="flex flex-col">
+                    <label for="nom" class="text-m font-medium">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Tapez votre nom" required class="border p-2 rounded-md">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="prenom" class="text-m font-medium">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Tapez votre prénom" required class="border p-2 rounded-md">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="email" class="text-m font-medium">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Tapez votre E-mail" required class="border p-2 rounded-md">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="message" class="text-m font-medium">Message :</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tapez votre message" required class="border p-2 rounded-md"></textarea>
+                </div>
+
+                <p id="errorMessage" class="error"></p>
+
+                <button type="submit" class="bg-gray-700 text-white p-2 rounded-md hover:bg-gray-600 transition">Envoyer</button>
+            </form>
+    
+
+    <script>
+        function validateForm() {
+            // Récupérer les valeurs des champs
+            var nom = document.getElementById("nom").value;
+            var prenom = document.getElementById("prenom").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Vérifier si les champs sont vides
+            if (nom === "" || prenom === "" || email === "" || message === "") {
+                document.getElementById("errorMessage").innerHTML = "Tous les champs doivent être remplis.";
+                return false;
+            }
+
+            // Vérifier si l'email est valide
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("errorMessage").innerHTML = "Veuillez saisir une adresse e-mail valide.";
+                return false;
+            }
+
+            // Réinitialiser le message d'erreur
+            document.getElementById("errorMessage").innerHTML = "";
+
+            // Vous pouvez ajouter ici le code pour envoyer le formulaire par e-mail (côté serveur)
+
+            // Empêcher le formulaire de se soumettre normalement
+            return false;
+        }
+    </script>
     </div>
     <?php include('asset/inc/footer.php'); ?>
+    
 </body>
 
 </html>

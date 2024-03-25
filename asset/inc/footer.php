@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 text-white py-8">
+<footer class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-8">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
 
         <div class="mb-4 lg:mb-0">
@@ -8,8 +8,8 @@
         </div>
 
         <div class="flex flex-col items-center lg:flex-row lg:items-center lg:space-x-4">
-            <img src="asset/img/logo2.png" class="w-20 mb-4 lg:mb-0 lg:mr-4" alt="Logo de J@B WEB">
-            <div>&copy; 2024 J@B WEB. Tous droits réservés.</div>
+            <img src="asset/img/ajweb.svg" class="w-20 mb-4 lg:mb-0 lg:mr-4" alt="Logo">
+            <div class="italic">&copy; 2024 AJ-WEB. Tous droits réservés.</div>
         </div>
 
         <div>
